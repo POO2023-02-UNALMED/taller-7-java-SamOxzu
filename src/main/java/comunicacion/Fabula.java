@@ -40,10 +40,13 @@ public class Fabula extends Escrito {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
+        result.append(getOrigen()).append("\n");
         result.append(getTitulo()).append("\n");
         result.append(getAutor()).append("\n");
-        result.append(ensenanza).append("\n");
         result.append(getPaginas()).append("\n");
+        result.append(getEnsenanza());
         return result.toString();
     }
+
+
 }
