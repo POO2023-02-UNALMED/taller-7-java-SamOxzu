@@ -53,19 +53,19 @@ public class Libro extends Escrito {
     }
 
     @Override
-    String interpretacion() {
+    public String interpretacion() {
         return interpretacion;
     }
 
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Título: ").append(getTitulo()).append("\n");
-        result.append("Autor: ").append(getAutor()).append("\n");
-        result.append("Co-autor: ").append(co_autor).append("\n");
-        result.append("Editorial: ").append(editorial).append("\n");
-        result.append("Edición: ").append(edicion).append("\n");
-        result.append("Páginas: ").append(getPaginas()).append("\n");
+        result.append(getTitulo()).append("\n");
+        result.append(getAutor()).append("\n");
+        result.append(co_autor).append("\n");
+        result.append(editorial).append("\n");
+        result.append(edicion).append("\n");
+        result.append(getPaginas()).append("\n");
         return result.toString();
     }
 }

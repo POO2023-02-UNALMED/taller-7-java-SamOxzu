@@ -63,25 +63,24 @@ public class Tesis extends Escrito {
     }
 
     @Override
-    String interpretacion() {
+    public String interpretacion() {
         return interpretacion;
     }
 
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Título: ").append(getTitulo()).append("\n");
-        result.append("Autor: ").append(getAutor()).append("\n");
-        result.append("Idea: ").append(idea).append("\n");
-        result.append("Argumentos: ");
+        result.append(getTitulo()).append("\n");
+        result.append(getAutor()).append("\n");
+        result.append(idea).append("\n");
         for (String argumento : argumentos) {
             result.append(argumento).append(", ");
         }
         result.delete(result.length() - 2, result.length()); // Elimina la última coma y espacio
         result.append("\n");
-        result.append("Conclusion: ").append(conclusion).append("\n");
-        result.append("Referencias: ").append(referencias).append("\n");
-        result.append("Páginas: ").append(getPaginas()).append("\n");
+        result.append(conclusion).append("\n");
+        result.append(referencias).append("\n");
+        result.append(getPaginas()).append("\n");
         return result.toString();
     }
 }

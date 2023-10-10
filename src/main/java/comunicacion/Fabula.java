@@ -33,17 +33,17 @@ public class Fabula extends Escrito {
     }
 
     @Override
-    String interpretacion() {
+    public String interpretacion() {
         return interpretacion;
     }
 
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Título: ").append(getTitulo()).append("\n");
-        result.append("Autor: ").append(getAutor()).append("\n");
-        result.append("Enseñanza: ").append(ensenanza).append("\n");
-        result.append("Páginas: ").append(getPaginas()).append("\n");
+        result.append(getTitulo()).append("\n");
+        result.append(getAutor()).append("\n");
+        result.append(ensenanza).append("\n");
+        result.append(getPaginas()).append("\n");
         return result.toString();
     }
 }
