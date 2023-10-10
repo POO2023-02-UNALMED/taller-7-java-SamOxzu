@@ -70,17 +70,14 @@ public class Tesis extends Escrito {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
+        result.append(getOrigen()).append("\n");
         result.append(getTitulo()).append("\n");
         result.append(getAutor()).append("\n");
-        result.append(idea).append("\n");
-        for (String argumento : argumentos) {
-            result.append(argumento).append(", ");
-        }
-        result.delete(result.length() - 2, result.length()); // Elimina la última coma y espacio
-        result.append("\n");
-        result.append(conclusion).append("\n");
-        result.append(referencias).append("\n");
         result.append(getPaginas()).append("\n");
+        result.append(getIdea()).append("\n");
+        result.append(argumentos.length).append("\n");
+        result.append(getConclusion()).append("\n");
+        result.append(getReferencias());
         return result.toString();
     }
 }

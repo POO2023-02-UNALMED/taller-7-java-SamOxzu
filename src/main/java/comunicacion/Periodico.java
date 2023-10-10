@@ -50,11 +50,12 @@ public class Periodico extends Escrito {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("Título: ").append(getTitulo()).append("\n");
-        result.append("Autor: ").append(getAutor()).append("\n");
-        result.append("Fecha: ").append(fecha).append("\n");
-        result.append("Primicia: ").append(primicia).append("\n");
-        result.append("Páginas: ").append(getPaginas()).append("\n");
+        result.append(getOrigen()).append("\n");
+        result.append(getTitulo()).append("\n");
+        result.append(getAutor()).append("\n");
+        result.append(getPaginas()).append("\n");
+        result.append(getFecha()).append("\n");
+        result.append(getPrimicia());
         return result.toString();
     }
 }

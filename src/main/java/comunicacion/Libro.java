@@ -60,12 +60,13 @@ public class Libro extends Escrito {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
+        result.append(getOrigen()).append("\n");
         result.append(getTitulo()).append("\n");
         result.append(getAutor()).append("\n");
-        result.append(co_autor).append("\n");
-        result.append(editorial).append("\n");
-        result.append(edicion).append("\n");
         result.append(getPaginas()).append("\n");
+        result.append(getCo_autor()).append("\n");
+        result.append(getEditorial()).append("\n");
+        result.append(getEdicion());
         return result.toString();
     }
 }
